@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessLogoViewController">
+            <connections>
+                <outlet property="Business_LogophotoBtn" destination="aYP-Lo-wx5" id="x6Q-Kr-Avm"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imagebackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="CB9-jA-fWy">
+                    <rect key="frame" x="-9" y="0.0" width="336" height="306"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="336" id="fht-c8-937"/>
+                        <constraint firstAttribute="height" constant="306" id="sp5-qI-aYA"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh2-qK-owJ">
+                    <rect key="frame" x="20" y="314" width="280" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="q43-bQ-6Rz"/>
+                        <constraint firstAttribute="width" constant="280" id="tDo-D6-1S5"/>
+                    </constraints>
+                    <state key="normal" title="保存" backgroundImage="but-2.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BusinessLogoSaveBtn:" destination="-1" eventType="touchUpInside" id="6GN-8N-VsK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYP-Lo-wx5">
+                    <rect key="frame" x="8" y="6" width="302" height="273"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="273" id="5tc-jc-NH6"/>
+                        <constraint firstAttribute="width" constant="302" id="Axa-EP-b4I"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title=""/>
+                    <connections>
+                        <action selector="BusinessLogoChangeBtn:" destination="-1" eventType="touchUpInside" id="699-QI-jas"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aYP-Lo-wx5" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="8" id="25c-nB-yIv"/>
+                <constraint firstItem="aYP-Lo-wx5" firstAttribute="top" secondItem="1" secondAttribute="top" constant="6" id="EVt-YI-Oe2"/>
+                <constraint firstItem="CB9-jA-fWy" firstAttribute="top" secondItem="1" secondAttribute="top" id="HbK-jO-hmo"/>
+                <constraint firstItem="Jh2-qK-owJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="LOW-0L-DIe"/>
+                <constraint firstItem="CB9-jA-fWy" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="-9" id="f2n-bM-K1a"/>
+                <constraint firstItem="Jh2-qK-owJ" firstAttribute="top" secondItem="CB9-jA-fWy" secondAttribute="bottom" constant="8" id="qC9-IW-tHO"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Imagebackground.png" width="110" height="111"/>
+        <image name="but-2.png" width="163" height="52"/>
+    </resources>
+</document>
